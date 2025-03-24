@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+button {
+  border-radius: var(--radius);
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.toaster .sonner-toast {
+  color: red !important; /* Ensures the text is red */
+  font-weight: bold;
+}
+
+.toaster .sonner-toast strong {
+  color: white !important; /* Ensures titles remain visible */
+}

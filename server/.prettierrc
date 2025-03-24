@@ -1,0 +1,19 @@
+{
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.documentSelectors": [
+     "**/*.{cjs,mjs,ts,tsx,astro,md,mdx,json,yaml,yml}"
+  ],
+  "prettier.useTabs": true,
+  "prettier.singleQuote": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+     "source.fixAll.eslint": "explicit",
+     "source.sortImports": "explicit"
+  },
+  "trailingComma": "es5",
+  "tabWidth": 3,
+  "singleQuote": true
+}

@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "description": "Full-stack application with unified client and server scripts",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run start:dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "cd client && npm install && cd ../server && npm install",
+    "build:all": "cd client && npm run build && cd ../server && npm run build",
+    "docker:up": "cd server/docker && sudo docker compose up -d",
+    "seed": "cd server && npm run db:seed"
+  },
+  "keywords": [
+    "fullstack",
+    "react",
+    "node"
+  ],
+  "author": "Emanuel",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
